@@ -3,25 +3,25 @@
 
 FILE *f;
 int ret,n;
-void run_action1(void);
+void create_a_new_file(void);
 int main()
 {
     printf("Main Start\n");
 
-    run_action1();
+    create_a_new_file();
 
     return 0;
 }
 
 //Funcions implementation
-void run_action1(void)
+void create_a_new_file(void)
 {
     char s[30];
     printf("provide full name for the new file:");
     scanf("%s",&s);
     printf("\n%s\n",s);
     f = fopen(s,"wt");
-    fprintf(f,"first line\n");
+
     fclose(f);
     printf("File:%s  created\n",s);
 }
