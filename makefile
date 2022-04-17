@@ -1,6 +1,6 @@
 
 
 all: main.c
-	gcc -o main main.c -I
+	gcc -o main sources\files\main.c -I
 check:
 distcheck:
